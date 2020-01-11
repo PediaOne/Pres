@@ -31,7 +31,7 @@ end
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 
-  after_save :persist
+  after_save :pres_persist_event
   attr_accessor :pres_actor
   attr_accessor :pres_action_name
 
@@ -41,7 +41,7 @@ class ApplicationRecord < ActiveRecord::Base
     self.save
   end
   
-  def persist_event
+  def pres_persist_event
     if self.pres_actor && self.pres_action_name
       payload = {}
       self.saved_changes.each do |key, value|
