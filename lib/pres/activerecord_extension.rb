@@ -48,7 +48,7 @@ class ApplicationRecord < ActiveRecord::Base
         payload[key] = value[1]
       end
       Pedia::Cloud::Events::Api::Client.new.create_event(
-        self.action_name,
+        self.pres_action_name,
         actor == 'genesis' ? 'genesis' : actor.pedia_identifier,
         self.saved_changes
       )
