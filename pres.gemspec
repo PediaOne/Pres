@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.version     = Pres::VERSION
   spec.authors     = ["Pres"]
   spec.email       = ["pres@pedia.one"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of Pres."
-  spec.description = "TODO: Description of Pres."
+  spec.homepage    = "https://github.com/PediaOne/Pres"
+  spec.summary     = "Pres is a Rails plugin that allows one to push business logic events to an event stack."
+  spec.description = "Pres is in development. More will be added later."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
