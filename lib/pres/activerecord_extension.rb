@@ -32,8 +32,8 @@ class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 
   after_save :persist
-  attr_accessor :actor
-  attr_accessor :action_name
+  attr_accessor :pres_actor
+  attr_accessor :pres_action_name
 
   def save_event(actor, action_name)
     self.pres_actor = actor
