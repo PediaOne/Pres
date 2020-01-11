@@ -1,3 +1,4 @@
+require 'rest-client'
 module Pedia
   module Cloud
     module Events
