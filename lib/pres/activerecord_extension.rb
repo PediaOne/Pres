@@ -49,7 +49,7 @@ class ApplicationRecord < ActiveRecord::Base
       end
       Pedia::Cloud::Events::Api::Client.new.create_event(
         self.pres_action_name,
-        actor == 'genesis' ? 'genesis' : actor.pedia_identifier,
+        self.pres_actor == 'genesis' ? 'genesis' : self.pres_actor.pedia_identifier,
         self.saved_changes
       )
     else
