@@ -4,7 +4,7 @@ module Pedia
       module Api
         class Client
 
-          def initialize(base_url)
+          def initialize
             @base_url = 'http://localhost:3322/api/v1/'
           end
 
